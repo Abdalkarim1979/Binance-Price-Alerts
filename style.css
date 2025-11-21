@@ -1,0 +1,335 @@
+/* === Global Page Settings === */
+body {
+  direction: ltr;
+  text-align: right;
+  background: linear-gradient(135deg, #0f1113, #0b0c10);
+  color: #f0b90b;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  padding: 2px 10px;
+  margin: 0;
+}
+
+/* === Attractive Header with Gradient Colors === */
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* === Currency Input Interface === */
+.controls {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input, button, select {
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  direction: rtl;
+}
+
+/* === Responsive Grid Layout for Cards === */
+.alerts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* === Individual Currency Card Design === */
+.alert-item {
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.alert-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 22px rgba(255, 185, 11, 0.2);
+}
+
+strong {
+  font-size: 36px;
+}
+
+/* === Large Interactive Price Display === */
+.price-label {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 1px 0;
+  display: inline-block;
+  color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.price-label.up {
+  color: #28a745;
+}
+
+.price-label.down {
+  color: #dc3545;
+}
+
+.price-updated {
+  animation: flash 1s ease-in-out;
+  transform: scale(1.08);
+}
+
+/* === Show Alert Controls on Hover === */
+.alert-item .target-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.alert-item:hover .target-section {
+  max-height: 600px;
+  opacity: 1;
+}
+
+/* === Styling for Alert Inputs and Buttons === */
+.target-input,
+select,
+.toggle-btn {
+  display: block;
+  width: 80%;
+  margin: 6px auto;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* === General and Interactive Button Styling === */
+.toggle-btn, #add-btn, #stop-audio-btn {
+  background: linear-gradient(45deg, #f0b90b, #ffcc00);
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 2px 12px rgba(240, 185, 11, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background: linear-gradient(45deg, #00cc66, #00ff99);
+  color: #000;
+}
+
+.toggle-btn:hover,
+#add-btn:hover,
+#stop-audio-btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Toast Notifications Styling === */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  direction: rtl;
+  text-align: center;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toast.up { background-color: #28a745; }
+.toast.down { background-color: #dc3545; }
+
+/* === Fixed Stop Audio Button in Corner === */
+#stop-audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* === Flash Animation on Price Change === */
+@keyframes flash {
+  0% { background-color: rgba(40, 167, 69, 0.3); }
+  100% { background-color: transparent; }
+}
+
+/* === Delete Button Styling === */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: transparent;
+  color: #ff5555;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+/* === Flashing Effects for Alerts === */
+.flashing-up {
+  animation: flash-up 0.5s infinite;
+}
+
+.flashing-down {
+  animation: flash-down 0.5s infinite;
+}
+
+@keyframes flash-up {
+  0%, 100% { background-color: rgba(255, 255, 255, 0.04); }
+  50% { background-color: rgba(40, 167, 69, 0.3); }
+}
+
+@keyframes flash-down {
+  0%, 100% { background-color: rgba(255, 255, 255, 0.04); }
+  50% { background-color: rgba(220, 53, 69, 0.3); }
+}
+
+/* === Price Change Indicator === */
+.price-change {
+  font-size: 16px;
+  margin: 5px 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.price-change.positive {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.price-change.negative {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.price-change.neutral {
+  color: #f0b90b;
+  background-color: rgba(240, 185, 11, 0.1);
+}
+
+/* === Change Percentage Display === */
+.change-percentage {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* === Absolute Change Value Display === */
+.change-amount {
+  font-size: 14px;
+}
+
+/* === Enhanced Price Change Indicator === */
+.price-change {
+  font-size: 16px;
+  margin: 5px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 180px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-change.positive {
+  color: #28a745;
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.15), rgba(40, 167, 69, 0.05));
+  border-color: rgba(40, 167, 69, 0.3);
+}
+
+.price-change.negative {
+  color: #dc3545;
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.15), rgba(220, 53, 69, 0.05));
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+.price-change.neutral {
+  color: #f0b90b;
+  background: linear-gradient(135deg, rgba(240, 185, 11, 0.15), rgba(240, 185, 11, 0.05));
+  border-color: rgba(240, 185, 11, 0.3);
+}
+
+/* === Change Percentage with Enhanced Styling === */
+.change-percentage {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* === Absolute Change Value with Enhanced Styling === */
+.change-amount {
+  font-size: 22px;
+  opacity: 0.8;
+  display: block;
+}
+
+/* === Enhanced Price Display Effects === */
+.price-label.up {
+  color: #28a745;
+  text-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+.price-label.down {
+  color: #dc3545;
+  text-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+}
+/* === Input Group Styling === */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.input-or {
+  color: #f0b90b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.target-input, .percentage-input {
+  width: 45% !important;
+  text-align: center;
+}
+
+.percentage-input {
+  background: linear-gradient(135deg, rgba(240, 185, 11, 0.1), rgba(240, 185, 11, 0.05));
+  border: 1px solid rgba(240, 185, 11, 0.3);
+  color: #f0b90b;
+}
