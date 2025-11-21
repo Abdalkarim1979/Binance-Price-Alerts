@@ -8,8 +8,28 @@
 - **Flexible Modes**: Choose between one-time alerts or repeating notifications
 - **Visual Indicators**: Color-coded price movements and flashing alerts
 
-### How to Use
+## 🚀 Quick Start Guide
 
+Follow these steps to run and use the **Advanced Market Analysis and Trading System**:
+
+### 1. Clone or Download the Repository
+```bash
+git clone https://github.com/Abdalkarim1979/Advanced-Market-Analysis-and-Trading-System.git
+```
+Or download the ZIP file directly from the [GitHub repository](https://github.com/Abdalkarim1979/Binance-Price-Alerts/archive/refs/heads/main.zip).
+
+---
+
+### 2. Open the Main File
+- After extracting or cloning, locate the file:  
+  ```
+  index.html
+  ```
+- Open it with any modern browser (Chrome, Edge, Firefox).
+
+---
+
+### 3. Run the Application
 1. Open `index.html` in any modern browser (Chrome, Firefox, Edge, Safari…).
 2. The top 10 coins are automatically added on first launch.
 3. Type a trading pair ending with USDT (example: SOLUSDT) → click ➕ or press Enter.
