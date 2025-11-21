@@ -14,7 +14,7 @@ Follow these steps to run and use the **Advanced Market Analysis and Trading Sys
 
 ### 1. Clone or Download the Repository
 ```bash
-git clone https://github.com/Abdalkarim1979/Advanced-Market-Analysis-and-Trading-System.git
+git clone https://github.com/Abdalkarim1979/Binance-Price-Alerts.git
 ```
 Or download the ZIP file directly from the [GitHub repository](https://github.com/Abdalkarim1979/Binance-Price-Alerts/archive/refs/heads/main.zip).
 
