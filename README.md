@@ -60,8 +60,8 @@ Or download the ZIP file directly from the [GitHub repository](https://github.co
 
 ## 🎯 Demo
 
-**Live Demo**: [https://binance-price-alerts.vercel.app/]()  
-
+**Live Demo**:   
+[](https://binance-price-alerts.vercel.app/]).
 
 ### File Structure
 ```
