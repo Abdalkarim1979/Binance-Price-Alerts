@@ -8,6 +8,17 @@
 - **Flexible Modes**: Choose between one-time alerts or repeating notifications
 - **Visual Indicators**: Color-coded price movements and flashing alerts
 
+### How to Use
+
+1. Open `index.html` in any modern browser (Chrome, Firefox, Edge, Safari…).
+2. The top 10 coins are automatically added on first launch.
+3. Type a trading pair ending with USDT (example: SOLUSDT) → click ➕ or press Enter.
+4. Inside each card:
+   - Enter target price OR percentage
+   - Choose mode (Once / Repeat)
+   - Tap the bell button to activate the alert
+5. When the target is hit → toast + sound + card flashes green/red.
+   
 ### 💹 Advanced Monitoring
 - **Real-time Updates**: Live price updates every 5 seconds
 - **Multi-timeframe Analysis**: Track performance across different periods
