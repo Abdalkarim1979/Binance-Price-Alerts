@@ -107,24 +107,6 @@ The modular codebase supports easy addition of:
 - Portfolio tracking
 - Email/SMS notifications
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-### Reporting Issues
-Found a bug? Please [create an issue](https://github.com/your-username/binance-price-alerts/issues) with:
-- Browser and version
-- Steps to reproduce
-- Expected vs actual behavior
-- Console errors (if any)
-
 ## 📊 Performance
 
 - **Load Time**: < 2 seconds
