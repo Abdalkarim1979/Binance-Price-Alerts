@@ -61,7 +61,7 @@ Or download the ZIP file directly from the [GitHub repository](https://github.co
 ## 🎯 Demo
 
 **Live Demo**:   
-[binance-price-alerts](https://binance-price-alerts.vercel.app]).
+[binance-price-alerts](https://binance-price-alerts.vercel.app).
 
 ### File Structure
 ```
